@@ -1,0 +1,213 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #080808;
+    color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace; /* Estilo terminal/máquina de escrever */
+    overflow: hidden;
+}
+
+/* Cabeçalho flutuante minimalista */
+.hud-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 10px 15px;
+    border-left: 2px solid #fff;
+    pointer-events: none; /* Deixa o clique passar direto se necessário */
+}
+
+.hud-header h1 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hud-sub {
+    font-size: 0.65rem;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+/* Container do Mapa */
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: #080808;
+}
+
+/* Customização dos popups do mapa para ficarem escuros */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #111 !important;
+    color: #fff !important;
+    border: 1px solid #333;
+    border-radius: 0px !important; /* Sem bordas arredondadas (estética crua) */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.leaflet-popup-content h3 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.leaflet-popup-content p {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+/* Inverte as cores do mapa do OpenStreetMap para manter a estética escura do ANTI */
+.leaflet-tile {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg);
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #080808;
+    color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilização da Tela Inicial (index.html) */
+.home-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at center, #151515 0%, #050505 100%);
+}
+
+.home-container {
+    text-align: left;
+    max-width: 600px;
+    padding: 40px;
+    border-left: 2px solid #fff;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    letter-spacing: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-subtitle {
+    font-size: 0.85rem;
+    color: #888;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.coordinates-info {
+    display: block;
+    font-size: 0.7rem;
+    color: #555;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.btn-enter {
+    display: inline-block;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+}
+
+.btn-enter:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Estilização da Página do Mapa (mapa.html) */
+.map-body {
+    overflow: hidden;
+}
+
+.hud-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    border-left: 2px solid #fff;
+}
+
+.hud-header h1 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.hud-sub {
+    font-size: 0.65rem;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.back-link {
+    display: block;
+    font-size: 0.75rem;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: #080808;
+}
+
+/* Filtro para deixar o mapa escuro (OpenStreetMap) */
+.leaflet-tile {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg);
+}
+
+/* Popups do mapa */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #111 !important;
+    color: #fff !important;
+    border: 1px solid #333;
+    border-radius: 0px !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.leaflet-popup-content h3 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.leaflet-popup-content p {
+    font-size: 0.75rem;
+    color: #aaa;
+}
