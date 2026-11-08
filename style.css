@@ -235,3 +235,57 @@ body, html {
 .home-container, .glitch-box, .entry-action {
   border-left: none !important;
 }
+/* Estilos para a página de Menu (Hub) */
+.menu-body {
+  background-color: #0b0b0b;
+  color: #f0f0f0;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.logo-img-small {
+  max-width: 180px;
+  height: auto;
+  display: block;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  border: 1px solid #333;
+  padding: 12px 25px;
+  transition: all 0.2s ease-in-out;
+  background-color: #111;
+}
+
+.menu-link:hover {
+  background-color: #f0f0f0;
+  color: #0b0b0b;
+  border-color: #f0f0f0;
+}
+
+.menu-footer {
+  font-size: 0.8rem;
+  color: #666;
+  letter-spacing: 1px;
+}
