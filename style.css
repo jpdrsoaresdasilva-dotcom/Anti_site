@@ -217,3 +217,21 @@ body, html {
     height: auto;
     display: block;
 }
+/* Remove qualquer borda acidental ou margem que crie linhas verticais */
+body, html {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* Remove qualquer borda acidental ou margem que crie linhas verticais */
+body, html {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* Garante que o container principal ou o elemento glitch não tenha borda à esquerda */
+.home-container, .glitch-box, .entry-action {
+  border-left: none !important;
+}
