@@ -289,3 +289,21 @@ body, html {
   color: #666;
   letter-spacing: 1px;
 }
+/* Remove a tipografia Courier New e aplica um estilo industrial/brutalista pesado */
+body, html {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #0b0b0b;
+  color: #f0f0f0;
+  font-family: 'Impact', 'Arial Bold', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Garante que os botões e textos sigam a mesma linha sem o estilo máquina de escrever */
+.menu-link, .btn-enter, .home-subtitle, .coordinates-info {
+  font-family: 'Impact', 'Arial Bold', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
