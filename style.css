@@ -289,7 +289,7 @@ body, html {
   color: #666;
   letter-spacing: 1px;
 }
-/* Remove a tipografia Courier New e aplica um estilo industrial/brutalista pesado */
+/* Configuração global para usar Arial normal em todo o site */
 body, html {
   margin: 0;
   padding: 0;
@@ -297,13 +297,30 @@ body, html {
   outline: none;
   background-color: #0b0b0b;
   color: #f0f0f0;
-  font-family: 'Impact', 'Arial Bold', sans-serif;
-  letter-spacing: 1px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.5px;
 }
 
-/* Garante que os botões e textos sigam a mesma linha sem o estilo máquina de escrever */
-.menu-link, .btn-enter, .home-subtitle, .coordinates-info {
-  font-family: 'Impact', 'Arial Bold', sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+/* Garante que todos os títulos, botões e textos sigam rigorosamente a Arial normal */
+h1, h2, h3, h4, p, span, a, .menu-link, .btn-enter, .home-subtitle, .coordinates-info {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Ajustes visuais para os botões e links manterem a estética limpa */
+.menu-link, .btn-enter {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 12px 25px;
+  background-color: #111;
+  color: #f0f0f0;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-link:hover, .btn-enter:hover {
+  background-color: #f0f0f0;
+  color: #0b0b0b;
+  border-color: #f0f0f0;
 }
