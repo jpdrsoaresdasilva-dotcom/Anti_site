@@ -211,3 +211,9 @@ body, html {
     font-size: 0.75rem;
     color: #aaa;
 }
+.logo-img {
+    max-width: 250px; /* Altere este valor se quiser o logótipo maior ou menor */
+    width: 100%;
+    height: auto;
+    display: block;
+}
