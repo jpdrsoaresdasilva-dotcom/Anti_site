@@ -333,6 +333,6 @@ h1, h2, h3, h4, p, span, a, .menu-link, .btn-enter, .home-subtitle, .coordinates
   pointer-events: none;
   z-index: 9999;
   opacity: 0.8;             /* Visibilidade inicial forte */
-  transition: opacity 1.5s ease-out; /* Demora 1.5 segundos a desaparecer completamente */
+  transition: opacity 15s ease-out; /* Demora 1.5 segundos a desaparecer completamente */
   transform: translate(-50%, -50%);
 }

@@ -7,12 +7,12 @@ document.addEventListener('mousemove', function(e) {
   
   document.body.appendChild(trail);
   
-  // Mantém o traço visível por 800ms antes de começar a desvanecer lentamente
+  // Mantém visível por 500ms antes de iniciar o fade-out de 15 segundos
   setTimeout(() => {
     trail.style.opacity = '0';
-    // Remove o elemento do HTML após o tempo total da transição (1.5 segundos)
+    // Remove o elemento do HTML após o tempo total (15 segundos + 0.5s)
     setTimeout(() => {
       trail.remove();
-    }, 1500);
-  }, 800);
+    }, 15500);
+  }, 500);
 });
