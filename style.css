@@ -325,14 +325,15 @@ h1, h2, h3, h4, p, span, a, .menu-link, .btn-enter, .home-subtitle, .coordinates
   border-color: #f0f0f0;
 }
 /* Estilo para a linha de rastro tipo lápis */
+/* Rastro estilo lápis contínuo com duração de 15 segundos */
 .cursor-trail {
   position: fixed;
-  width: 2px;               /* Espessura fina a lembrar a ponta de um lápis */
+  width: 2px;
   height: 2px;
-  background-color: #f0f0f0;  /* Cor clara sobre o fundo escuro */
+  background-color: #f0f0f0;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.8;             /* Visibilidade inicial forte */
-  transition: opacity 15s ease-out; /* Demora 1.5 segundos a desaparecer completamente */
+  opacity: 0.8;
+  transition: opacity 15s ease-out;
   transform: translate(-50%, -50%);
 }
